@@ -1,0 +1,17 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: sc-server-discovery
+  profiles:
+    active: default
+
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: true
+  server:
+    eviction-interval-timer-in-ms: 10000 # 无效节点剔除时间，默认是 60s
+

@@ -10,6 +10,7 @@ mvnw.cmd
 .idea/*
 target/
 bin/
+logs/
 
 ### STS ###
 .apt_generated
