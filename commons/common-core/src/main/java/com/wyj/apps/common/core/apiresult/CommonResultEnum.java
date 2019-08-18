@@ -1,4 +1,4 @@
-package com.wyj.apps.common.core;
+package com.wyj.apps.common.core.apiresult;
 
 import lombok.Getter;
 

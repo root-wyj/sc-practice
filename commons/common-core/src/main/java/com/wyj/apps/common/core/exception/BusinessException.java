@@ -1,5 +1,6 @@
-package com.wyj.apps.common.core;
+package com.wyj.apps.common.core.exception;
 
+import com.wyj.apps.common.core.apiresult.IResultEnum;
 import lombok.Getter;
 
 /**
@@ -12,6 +13,10 @@ import lombok.Getter;
 public class BusinessException extends RuntimeException{
 
     private String code;
+
+    public BusinessException(String message) {
+        super(message);
+    }
 
     public BusinessException(String code, String message) {
         super(message);

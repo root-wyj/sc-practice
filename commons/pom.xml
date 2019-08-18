@@ -25,6 +25,10 @@
         <lombok.version>1.16.22</lombok.version>
         <fastjson.version>1.2.58</fastjson.version>
         <common-lang3.version>3.8.1</common-lang3.version>
+        <tk-mapper.version>3.4.0</tk-mapper.version>
+        <mybatis.version>3.4.6</mybatis.version>
+
+        <common.version>1.0-SNAPSHOT</common.version>
     </properties>
 
     <dependencies>
@@ -63,6 +67,30 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${common-lang3.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper</artifactId>
+                <version>${tk-mapper.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.wyj.apps.commons</groupId>
+                <artifactId>common-utils</artifactId>
+                <version>${common.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.wyj.apps.commons</groupId>
+                <artifactId>common-core</artifactId>
+                <version>${common.version}</version>
             </dependency>
 
         </dependencies>

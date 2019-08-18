@@ -13,7 +13,6 @@
 
     <properties>
         <spring.version>5.0.8.RELEASE</spring.version>
-
     </properties>
 
     <dependencies>
@@ -21,6 +20,24 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.wyj.apps.commons</groupId>
+            <artifactId>common-core</artifactId>
         </dependency>
     </dependencies>
 
