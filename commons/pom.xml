@@ -27,6 +27,7 @@
         <common-lang3.version>3.8.1</common-lang3.version>
         <tk-mapper.version>3.4.0</tk-mapper.version>
         <mybatis.version>3.4.6</mybatis.version>
+        <google-guava.version>28.0-jre</google-guava.version>
 
         <common.version>1.0-SNAPSHOT</common.version>
     </properties>
@@ -92,6 +93,13 @@
                 <artifactId>common-core</artifactId>
                 <version>${common.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${google-guava.version}</version>
+            </dependency>
+
 
         </dependencies>
     </dependencyManagement>
