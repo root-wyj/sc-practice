@@ -14,6 +14,7 @@ public enum CommonResultEnum implements IResultEnum{
     SUCCESS("000000", "SUCCESS"),
     FAILED("000002", "FAILED"),
     SYSTEM_ERROR("000003", "ERROR"),
+    DISTRIBUTE_LOCK_FAILED("000004", "distribute lock failed"),
 
     // 文件相关 000100 开始
     FILE_NULL("000101", "文件不能为空"),
