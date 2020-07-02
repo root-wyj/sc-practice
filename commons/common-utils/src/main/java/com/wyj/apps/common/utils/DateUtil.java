@@ -1,5 +1,6 @@
 package com.wyj.apps.common.utils;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -14,6 +15,8 @@ import java.util.Date;
  * Date: 2019/8/27
  */
 public class DateUtil {
+
+    public static final String FORMAT_YYYY_MM_DD_HH_MM_SS = "yyyy-MM-dd HH:mm:ss";
 
     /**
      * 判断两个时间是否是同一天
@@ -85,6 +88,20 @@ public class DateUtil {
             ThreadContextUtils.put(format, sdf);
         }
         return sdf.format(date);
+    }
+
+    public static Date parseDate(String dateStr, String format) {
+        SimpleDateFormat sdf = ThreadContextUtils.get(format);
+        if (sdf == null) {
+            sdf = new SimpleDateFormat(format);
+            ThreadContextUtils.put(format, sdf);
+        }
+        try {
+            return sdf.parse(dateStr);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     /**
