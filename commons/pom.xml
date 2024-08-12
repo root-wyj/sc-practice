@@ -125,6 +125,7 @@
                 <configuration>
                     <classifier>exec</classifier>
                 </configuration>
+                <version>2.1.6.RELEASE</version>
             </plugin>
         </plugins>
     </build>
